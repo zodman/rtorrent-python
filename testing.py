@@ -55,6 +55,9 @@ for torrent in r.get_torrents():
         format_ratio(torrent.ratio),
     ])
 output = table.draw()
+print (output,)
+
+"""
 if output: print output
 
 table.reset()
@@ -68,4 +71,6 @@ table.add_row([
         " ",
         " ",
         ])
-print table.draw()
+r = table.draw()
+print(r,)
+"""
